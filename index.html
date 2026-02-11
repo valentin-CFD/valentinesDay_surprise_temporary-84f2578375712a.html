@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pour toi ma petite chérie 💙❤️</title>
+<style>
+  body {
+    background: linear-gradient(#ffe6f0, #fff0f5);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    overflow-x: hidden; /* only hide horizontal overflow */
+    overflow-y: auto;   /* allow vertical scroll */
+    margin: 0;
+    height: 100vh;
+    position: relative;
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 3em;
+    color: #d6336c;
+  }
+
+  #poem {
+  margin: 50px auto;
+  padding: 45px;
+  width: 85%;
+  max-width: 600px;
+  border: 4px solid #ff6f91; /* rose contour */
+  border-radius: 22px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  font-size: 2.2em; /* bigger text */
+  font-family: 'Pacifico', cursive; /* handwritten */
+  color: #d6336c;
+  transition: opacity 0.4s ease;
+}
+
+#poem2 {
+  margin: 40px auto;
+  padding: 50px;
+  width: 100%;           /* wider */
+  max-width: 800px;     /* bigger max width */
+  max-height: 80vh;     /* taller */
+  overflow-y: auto;     /* keep scroll if content is too long */
+  border: 4px solid #ff6f91; 
+  border-radius: 22px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  font-size: 1.8em;
+  font-family: 'Pacifico', cursive;
+  color: #d6336c;
+  transition: opacity 0.4s ease;
+}
+
+/* adjust size of the poem box wrt screen size */
+@media (max-height: 600px) {
+  #poem2, #poem {
+    padding: 30px;
+    font-size: 2em;
+  }
+}
+
+/* scroll bar style */
+  @media (max-height: 600px) {
+    #poem2, #poem {
+      padding: 30px;
+      font-size: 2em;
+    }
+  }
+
+  .button-container {
+    position: relative;
+    height: 120px;
+    margin-top: 20px;
+  }
+
+  .choice-heart {
+    font-size: 2em;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ff4d6d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+    position: absolute;
+  }
+
+  #ouiBtn {
+    left: 40%;
+    top: 0;
+  }
+
+  #nonBtn {
+    left: 60%;
+    top: 0;
+  }
+
+  #nonBtn:hover {
+    transform: scale(1.2);
+  }
+
+  .hint {
+    font-size: 1em;
+    opacity: 0.8;
+    margin-top: 150px;
+  }
+
+  img {
+    margin: 30px auto;
+    display: none;
+    width: 70vw;
+    max-width: 500px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  /* Floating hearts */
+  .heart {
+    position: absolute;
+    bottom: -30px;
+    color: #ff4d6d;
+    font-size: 20px;
+    animation: float infinite ease-in;
+    pointer-events: none;
+  }
+
+  @keyframes float {
+    0%   { transform: translateY(0); opacity: 0; }
+    10%  { opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<h1>💙 Joyeuse Saint-Valentin ma petite Emma chérie 💙</h1>
+
+<div id="poem">
+  <p>
+    Veux-tu être ma Valentine ?
+  </p>
+</div>
+
+<div class="button-container">
+  <div id="ouiBtn" class="choice-heart">OUI</div>
+  <div id="nonBtn" class="choice-heart">NON</div>
+</div>
+
+<div id="poem2" style="display: none;">
+  <p>
+    Maintenant que tu t’es laissée divertir, <br>
+Laisse-moi te donner le sourire, <br>
+C’est pour toi ces quelques lignes, <br>
+Que j’ai écrites en y glissant quelques rimes. <br>
+ <br>
+À défaut de t’offrir de belles roses, <br>
+En cette fête des amoureux, <br>
+Je vais tourner mon intention en prose, <br>
+A l’égard de notre amour brillant de mille feux. <br>
+ <br>
+Cela fait un plus d’un an que je t’ai rencontré, <br>
+C’est à la fois peu et une éternité, <br>
+Pourtant mon coeur n’en a jamais été aussi comblé, <br>
+Je te le dis, il ne veut qu’une chose, c’est continuer. <br>
+ <br>
+Avec toi, je découvre l’amour paisible, <br>
+Celui qui deviendra le ciment de notre relation,  <br>
+C’est un pas après l’autre que nous avancerons, <br>
+Côte à côte, nous ouvrirons les portes de tous les possibles.  <br>
+ <br>
+Oh! c’est ébahi que je me surprends, <br>
+A te faire une nouvelle fois plein de compliments, <br>
+Je sais que tu ne me trouves pas crédible, <br>
+Je n’y peux rien, tu es si irrésistible. <br>
+ <br>
+Je vais donc continuer sur cette lancée, <br>
+Pour t’exprimer à quel point je suis émerveillé, <br>
+D’avoir rencontré une personne si sensible, <br>
+Qui m’exprime ses sentiments de façon si tangible. <br>
+ <br>
+Et c’est avec beaucoup de fierté et d’affectivité, <br>
+Que je me propose d’être ton confident, <br>
+Celui à qui tu pourras tout raconter, <br>
+Celui qui sera pour toi, toujours présent.  <br>
+ <br>
+Tu sais à quel point j’aime ta personnalité, <br>
+Je ne vais pas m’attarder davantage, <br>
+Tout ce que je te dis tu l’as déjà réalisé, <br>
+Car cela fait plus d’un an qu’on parle le même langage. <br>
+ <br>
+Emma je t’aime, ceci est ma déclaration, <br>
+Sous forme de poème et en toute dévotion. <br>
+  </p>
+</div>
+
+<div id="nextMessage" style="display: none; margin-top: 30px;">
+  <div style="
+    display: inline-block;
+    padding: 25px 35px;
+    border: 4px solid #ff6f91;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.9);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #d6336c;
+  ">
+    C'est bien, c'était l'unique (comme toi) bonne réponse.  <br>
+    Tu peux cliquer sur le bouton en dessous pour accéder à la suite (promis celui-ci bouge pas).
+  </div>
+  <br><br>
+  <button id="nextBtn" style="
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-family: 'Pacifico', cursive;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  ">Clique ici </button>
+</div>
+
+
+<script>
+
+
+  let current = 0;
+  const poem = document.getElementById("poem");
+  const ouiBtn = document.getElementById("ouiBtn");
+  const nonBtn = document.getElementById("nonBtn");
+  const hint = document.querySelector(".hint");
+  const img = document.getElementById("photo");
+
+  //- NON button behavior
+  function moveNonBtn() {
+  const padding = 20;
+
+  const maxX = window.innerWidth - nonBtn.offsetWidth - padding;
+
+  // Limit vertical movement to top 40% of screen
+  const verticalLimit = window.innerHeight * 0.4;
+  const maxY = verticalLimit - nonBtn.offsetHeight - padding;
+
+  let randomX = Math.random() * maxX;
+  let randomY = Math.random() * maxY;
+
+  nonBtn.style.left = randomX + "px";
+  nonBtn.style.top = randomY + "px";
+}
+
+nonBtn.addEventListener("mouseenter", moveNonBtn);
+
+//- OUI button behavior
+ouiBtn.addEventListener("click", () => {
+  // hide first poem and buttons
+  poem.style.opacity = 0;
+  ouiBtn.style.opacity = 0;
+  nonBtn.style.opacity = 0;
+
+  setTimeout(() => {
+    poem.style.display = "none";
+    ouiBtn.style.display = "none";
+    nonBtn.style.display = "none";
+
+    // show the next message
+    const nextMessage = document.getElementById("nextMessage");
+    nextMessage.style.display = "block";
+    nextMessage.style.opacity = 0;
+
+    // fade-in effect
+    setTimeout(() => {
+      nextMessage.style.opacity = 1;
+    }, 50);
+  }, 400);
+});
+
+
+ const nextBtn = document.getElementById("nextBtn");
+nextBtn.addEventListener("click", () => {
+  const nextMessage = document.getElementById("nextMessage");
+  nextMessage.style.opacity = 0;
+
+  setTimeout(() => {
+    nextMessage.style.display = "none";
+
+    const poem2 = document.getElementById("poem2");
+    poem2.style.display = "block";
+    poem2.style.opacity = 0;
+
+    setTimeout(() => {
+      poem2.style.opacity = 1;
+    }, 50);
+  }, 400);
+});
+
+  //- Floating hearts
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.textContent = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (14 + Math.random() * 20) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 8000);
+  }
+  setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
